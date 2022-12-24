@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes e Depois</title>
+    <style>
+        div {
+            background-color: darkgreen;
+            width: 300px;
+            height: 70px;
+            color: white;
+            font: bold 23px arial;
+            line-height: 70px;
+            text-align: center;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Antes e Depois</h1>
+    <div id="res">
+        Antecessor e Sucessor
+    </div>
+    <script>
+        var a = window.document.querySelector('div')
+        a.addEventListener('click', clicar)
+        function clicar() {
+        var n = Number(window.prompt('Digite um número inteiro qualquer'))
+        window.alert(`Antes de ${n}, temos o número ${n-1} \nDepois de ${n}, temos o número ${n+1}`) 
+        }
+    </script>
+</body> 
+</html>
